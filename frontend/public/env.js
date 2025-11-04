@@ -1,0 +1,3 @@
+window.__ENV = {
+  API_BASE_URL: "http://backend:8080/api"
+};
