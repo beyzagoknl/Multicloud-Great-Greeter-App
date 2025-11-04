@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend/app:/app
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    environment:
+      - GREETINGS_FILE=${GREETINGS_FILE}
+      - PORT=${BACKEND_PORT}   
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend/src:/app/src
+    ports:
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
