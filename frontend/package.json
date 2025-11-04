@@ -1,0 +1,23 @@
+{
+  "name": "great-greeter-app",
+  "version": "1.0.0",
+  "description": "A Vue.js frontend for the Great Greeter App integrated with PrimeVue.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "primeflex": "^4.0.0",
+    "primeicons": "^1.0.0",
+    "primevue": "^3.53.1",
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.2",
+    "vite": "^2.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "license": "MIT"
+}
